@@ -8,7 +8,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-   <script src="https://use.fontawesome.com/21038caf21.js"></script>
+   <script src="https://use.fontawesome.com/92bde252df.js"></script>
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -31,10 +31,10 @@
                   <a class="menu__list-link" href="#car">Автопарк</a>
                </li>
                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Контакты</a>
+                  <a class="menu__list-link" href="#contacts">Контакты</a>
                </li>
                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Цены</a>
+                  <a class="menu__list-link" href="#" data-fancybox data-src="#popup">Цены</a>
                </li>
             </ul>
             <div class="menu__contacts">
@@ -53,7 +53,7 @@
                      России</span>
                </h1>
             </div>
-            <p class="header__text wow animate__animated animate__fadeInUp animate__delay-1s">
+            <p class="header__text wow animate__animated animate__fadeInUp animate__delay-0.5s">
                Домашний переезд, доставка любых грузов,
                <span>оперативный просчет стоимости доставки,</span>
                <span>оптимальное решение любой задачи</span>
@@ -94,7 +94,7 @@
                   </p>
                </div>
                <a class="about__item wow animate__animated animate__fadeInRight" data-wow-offset="100"
-                  data-wow-delay=".1s" href="#" data-src="#popup">
+                  data-wow-delay=".1s" href="#" data-fancybox data-src="#popup">
                   <h3 class="about__item-title">
                      Домашний переезд
                   </h3>
@@ -252,34 +252,32 @@
          </div>
       </div>
    </section>
-   <footer class="footer section-page">
+   <footer class="footer section-page" id="contacts">
       <div class="container">
          <div class="footer__columns">
             <div class="footer__column">
                <div class="footer__column-title">Мы в соц сетях</div>
-               <ul class="footer__column-menu">
-                  <li class="footer__column-item footer__column-item--social fa fa-facebook-f">
-                     <a href="https://www.facebook.com/profile.php?id=100060919342669"></a>
-                  </li>
-                  <li class="footer__column-item footer__column-item--social fa fa-telegram">
-                     <a href="#"></a>
-                  </li>
-                  <li class="footer__column-item footer__column-item--social fa fa-pinterest">
-                     <a href="#"></a>
-                  </li>
-                  <li class="footer__column-item footer__column-item--social fa fa-instagram">
-                     <a href="#"></a>
-                  </li>
-               </ul>
+               <div class="footer__column-menu">
+                  <a class="footer__column-item footer__column-item--social icon-facebook"
+                     href="https://www.facebook.com/profile.php?id=100060919342669" target="_blank">
+                  </a>
+                  <a class="footer__column-item footer__column-item--social icon-viber"
+                     href="#" target="_blank">
+                  </a>
+                  <a class="footer__column-item footer__column-item--social icon-whatsapp1" href="#" target="_blank">
+                  </a>
+               </div>
             </div>
             <div class="footer__column">
                <div class="footer__column-title">Контакти</div>
-               <ul class="footer__column-menu">
-                  <li class="footer__column-item"><a class="menu__contacts-tel" href="tel:+380507060400"><span class="fa fa-phone"></span>+380507060400</a></li>
-
-                  <li class="footer__column-item"><a class="menu__contacts-tel" href="tel:+380977060400"><span class="fa fa-phone"></span>+380977060400</a></li>
-                  <li class="footer__column-item"><a class="menu__contacts-tel" href="tel:+79102967652"><span class="fa fa-phone"></span>+79102967652</a></li>
-               </ul>
+               <div class="footer__column-menu">
+                  <a class="footer__column-item" href="tel:+380507060400">
+                     <span class="fa fa-phone"></span>+380507060400</a>
+                  <a class="footer__column-item" href="tel:+380977060400">
+                     <span class="fa fa-phone"></span>+380977060400</a>
+                  <a class="footer__column-item" href="tel:+79102967652">
+                     <span class="fa fa-phone"></span>+79102967652</a>
+               </div>
             </div>
          </div>
    </footer>
@@ -292,18 +290,20 @@
          мы Вам перезвоним
       </div>
       <form>
-         <p>Имя и фамилия: *</p>
-         <input type="text" required>
-         <p>Телефон: *</p>
-         <input type="text" required>
+         <label>Имя и фамилия: *
+            <input type="text" required>
+         </label>
+         <label>Телефон: *
+            <input type="tel" required>
+         </label>
          <button type="submit">
             Отправить
          </button>
       </form>
    </div>
 
-
    <script src="js/main.min.js"></script>
+  
 </body>
 
 </html>

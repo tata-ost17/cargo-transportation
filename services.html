@@ -28,13 +28,13 @@
                   <a class="menu__list-link" href="#about">Услуги</a>
                </li>
                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#car">Автопарк</a>
+                  <a class="menu__list-link" href="index.html">Автопарк</a>
                </li>
                <li class="menu__list-item">
                   <a class="menu__list-link" href="#">Контакты</a>
                </li>
                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Цены</a>
+                  <a class="menu__list-link" href="#" data-fancybox data-src="#popup">Цены</a>
                </li>
             </ul>
             <div class="menu__contacts">
@@ -74,43 +74,54 @@
 
       </div>
    </header>
-   <footer class="footer section-page">
+   <footer class="footer section-page" id="contacts">
       <div class="container">
          <div class="footer__columns">
             <div class="footer__column">
                <div class="footer__column-title">Мы в соц сетях</div>
-               <ul class="footer__column-menu">
-                  <li class="footer__column-item footer__column-item--social fa fa-twitter">
-                     <a href="#"></a>
-                  </li>
-                  <li class="footer__column-item footer__column-item--social fa fa-telegram">
-                     <a href="#"></a>
-                  </li>
-                  <li class="footer__column-item footer__column-item--social fa fa-pinterest">
-                     <a href="#"></a>
-                  </li>
-                  <li class="footer__column-item footer__column-item--social fa fa-instagram">
-                     <a href="#"></a>
-                  </li>
-
-               </ul>
-
+               <div class="footer__column-menu">
+                  <a class="footer__column-item footer__column-item--social icon-facebook"
+                     href="https://www.facebook.com/profile.php?id=100060919342669" target="_blank">
+                  </a>
+                  <a class="footer__column-item footer__column-item--social icon-viber" href="#" target="_blank">
+                  </a>
+                  <a class="footer__column-item footer__column-item--social icon-whatsapp1" href="#" target="_blank">
+                  </a>
+               </div>
             </div>
             <div class="footer__column">
                <div class="footer__column-title">Контакти</div>
-               <ul class="footer__column-menu">
-                  <li class="footer__column-item"><a href="tel:0660000000">+380660000000</a></li>
-
-                  <li class="footer__column-item"><a href="mailto:oleg.ivanov@gmail.com">oleg.ivanov@gmail.com</a></li>
-                  <li class="footer__column-item">
-                     <p>г. Харьков, ул. Харьковская, 5</p>
-                  </li>
-               </ul>
+               <div class="footer__column-menu">
+                  <a class="footer__column-item" href="tel:+380507060400">
+                     <span class="fa fa-phone"></span>+380507060400</a>
+                  <a class="footer__column-item" href="tel:+380977060400">
+                     <span class="fa fa-phone"></span>+380977060400</a>
+                  <a class="footer__column-item" href="tel:+79102967652">
+                     <span class="fa fa-phone"></span>+79102967652</a>
+               </div>
             </div>
          </div>
    </footer>
-
-
+   <div id="popup" class="modal" style="display: none;">
+      <div class="modal__title">
+         Заказать звонок
+      </div>
+      <div class="modal__subtitle">
+         <span>Оставьте Ваш телефон,</span>
+         мы Вам перезвоним
+      </div>
+      <form>
+         <label>Имя и фамилия: *
+            <input type="text" required>
+         </label>
+         <label>Телефон: *
+            <input type="tel" required>
+         </label>
+         <button type="submit">
+            Отправить
+         </button>
+      </form>
+   </div>
 
    <script src="js/main.min.js"></script>
 </body>
