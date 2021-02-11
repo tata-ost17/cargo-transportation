@@ -21,19 +21,19 @@
                <span></span>
             </div>
             <ul class="menu__list">
-               <li class="menu__list-item">
+               <li class="menu__list-item menu-item">
                   <a class="menu__list-link" href="index.html">O нас</a>
                </li>
-               <li class="menu__list-item">
+               <li class="menu__list-item menu-item">
                   <a class="menu__list-link" href="#about">Услуги</a>
                </li>
-               <li class="menu__list-item">
-                  <a class="menu__list-link" href="index.html">Автопарк</a>
+               <li class="menu__list-item menu-item">
+                  <a class="menu__list-link" href="index.html" id="#reviews">Отзывы</a>
                </li>
-               <li class="menu__list-item">
+               <li class="menu__list-item menu-item">
                   <a class="menu__list-link" href="#">Контакты</a>
                </li>
-               <li class="menu__list-item">
+               <li class="menu__list-item menu-item">
                   <a class="menu__list-link" href="#" data-fancybox data-src="#popup">Цены</a>
                </li>
             </ul>
@@ -83,6 +83,20 @@
 
       </div>
    </header>
+   <section class="feedback section-page">
+      <div class="container">
+         <h3 class="feedback__title title">Остались вопросы? Напишите нам:</h3>
+         <div class="feedback__form">
+            <form>
+               <input class="feedback__form-name" type="text" placeholder="Ваше имя:" required>
+               <input class="feedback__form-email" type="text" placeholder="Ваш E-Mail:" required>
+
+               <textarea class="feedback__form-textarea" placeholder="Ваш вопрос:"></textarea>
+               <button class="call__btn">Отправить</button>
+            </form>
+         </div>
+      </div>
+   </section>
    <footer class="footer section-page" id="contacts">
       <div class="container">
          <div class="footer__columns">
